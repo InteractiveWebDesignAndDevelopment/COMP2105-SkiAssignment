@@ -1,0 +1,9 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sky-background {
+    background-image: url('../images/sky-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
