@@ -37,26 +37,55 @@ body {
 
 header nav ul li {
     display: inline-block;
-    width: 13%;
+    width: 10%;
     vertical-align: middle;
     text-align: center;
 }
 
+header nav ul li.nav-logo { /* nav logo list item */
+    width: 20%
+}
+
 header nav ul {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: -230px;
 }
 
 header nav {
-    background-image: url('images/mountain-white-bg.svg');
+    background-image: url('../images/mountain-white-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height:  200px;
+    height:  300px;
     position: relative;
     top: -200px;
-    padding-bottom: 125px;
+}
+
+header nav ul li a {
+    disply: inline-block;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+
+header nav ul li a:hover {
+    border-bottom: 3px solid #000;
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul li:first-child a:hover { /* nav logo */
+    border: none;
+}
+
+
+header nav ul li a img { /* nav logo */
+    width: 110%;
 }
