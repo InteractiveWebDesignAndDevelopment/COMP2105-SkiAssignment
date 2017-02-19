@@ -18,10 +18,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
 	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-
-	<!-- Normalize -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<!-- Custom -->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -59,9 +55,27 @@
 	</header>
 	<main>
 		<!-- ===== Slide Section ===== -->
-		<section>
+		<section class="carousel slide" data-ride="carousel">
+
+			<!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="7"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="8"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="9"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="10"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="11"></li>
+  </ol>
+	<!-- Wrapper for the carousel items -->
+	<div class="carousel-inner" role="listbox">
 			<!-- Slide 1 -->
-			<section class="mySlides">
+			<section class="item active">
 
 				<img class="left" src="images/slides/night-ski.jpg" alt="Night Skiing poster">
 
@@ -75,7 +89,7 @@
 			</section>
 
 			<!-- Slide 2 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/mens-day.jpg" alt="Men's Day poster">
 
@@ -89,7 +103,7 @@
 			</section>
 
 			<!-- Slide 3 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/club-champs.jpg" alt="The Heights club championships image">
 
@@ -103,7 +117,7 @@
 			</section>
 
 			<!-- Slide 4 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/puddl-jump.jpg" alt="The Heights puddle jump image">
 
@@ -116,7 +130,7 @@
 			</section>
 
 			<!-- Slide 5 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/staff.jpg" alt="The Heights staff photo">
 
@@ -130,7 +144,7 @@
 			</section>
 
 			<!-- Slide 6 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/event.jpg" alt="Event Hall">
 
@@ -143,7 +157,7 @@
 			</section>
 
 			<!-- Slide 7 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/clubhouse.jpg" alt="Club House">
 
@@ -156,7 +170,7 @@
 			</section>
 
 			<!-- Slide 8 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/purchase.jpg" alt="Skiing Photo">
 
@@ -169,7 +183,7 @@
 			</section>
 
 			<!-- Slide 9 -->
-			<section class="mySlides">
+			<section class="item mySlides">
 
 				<img class="left" src="images/slides/snow-sport.jpg" alt="Skiing Photo">
 
@@ -182,7 +196,7 @@
 			</section>
 
 			<!-- Slide 10 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/guest.jpg" alt="Skiing Photo">
 
@@ -195,7 +209,7 @@
 			</section>
 
 			<!-- Slide 11 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/night-ski.jpg" alt="Skiing Poster">
 
@@ -209,7 +223,7 @@
 			</section>
 
 			<!-- Slide 12 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/ladies-night.jpg" alt="Ladies day poster">
 
@@ -222,7 +236,7 @@
 			</section>
 
 			<!-- Slide 13 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/chillax.jpg" alt="Chillax Poster">
 
@@ -237,7 +251,7 @@
 			</section>
 
 			<!-- Slide 14 -->
-			<section class="mySlides">
+			<section class="item">
 
 				<img class="left" src="images/slides/sandy-practor.jpg" alt="Sandy Proctor">
 
@@ -249,10 +263,19 @@
 				</article>
 				<a href="#">Read more</a>
 			</section>
-
+		</div>
 			<!-- Next and Previous Slide Buttons -->
-			<a href="" id="nextSlide"><img src="images/next-slide.svg" alt=">"></a>
-			<a href="" id="previousSlide"><img src="images/previous-slide.svg" alt="<"></a>
+
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span aria-hidden="true"><img src="images/next-slide.svg" alt=">"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span aria-hidden="true"><img src="images/previous-slide.svg" alt="<"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+			<!-- <a href="" id="nextSlide"><img src="images/next-slide.svg" alt=">"></a>
+			<a href="" id="previousSlide"><img src="images/previous-slide.svg" alt="<"></a> -->
 
 		</section>
 		<!-- End of slides -->
