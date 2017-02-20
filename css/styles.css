@@ -62,9 +62,14 @@ body {
     margin-top: 20px;
 }
 
+.masthead a {
+    font-size: 2rem;
+    color: #fff;
+}
+
 header nav ul li {
     display: inline-block;
-    width: 10%;
+    width: 12%;
     vertical-align: middle;
     text-align: center;
 }
@@ -74,7 +79,7 @@ header nav ul li.nav-logo { /* nav logo list item */
 }
 
 header nav ul {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -95,7 +100,7 @@ header nav ul li a {
     disply: inline-block;
     height: 100%;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #000;
@@ -103,7 +108,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    border-bottom: 3px solid #000;
+    border-bottom: 5px solid #000;
     text-decoration: none;
     color: #000;
 }
