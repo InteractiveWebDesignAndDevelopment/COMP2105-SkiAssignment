@@ -182,6 +182,7 @@ header nav ul li a img { /* nav logo */
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     text-align: center;
+    background: transparent;
 }
 
 .tabs li a {
