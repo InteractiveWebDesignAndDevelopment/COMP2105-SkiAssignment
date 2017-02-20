@@ -1,10 +1,24 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 .carousel-control.left, .carousel-control.right {
   background-image:
   none; outline: none;
 }
+.carousel-control.left img , .carousel-control.right img {
+  margin-top: 52%;
+  height: 5em;
+}
+
+.container-item {
+  width: 70%;
+  margin-left: 15%;
+}
+.item img {
+  margin-right: 10%;
+}
+
 
 .sky-background {
     background-image: url('../images/sky-bg.svg');
