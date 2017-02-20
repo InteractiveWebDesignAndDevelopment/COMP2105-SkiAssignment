@@ -160,3 +160,27 @@ header nav ul li a img { /* nav logo */
 #carousel-main {
   margin-top: -9%;
 }
+
+.tabs li {
+    display: inline-block;
+    width: 30%;
+}
+
+.tabs {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+.tabs li a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.tabs li a:hover {
+    border-bottom: 5px solid #113A41;
+}
